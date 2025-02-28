@@ -31,10 +31,11 @@ cd mklib
 magma
 
 # g++ direct
-# g++ -std=c++17 -o mklib src/main.cc
+# mkdir bin
+# g++ -std=c++17 -o bin/mklib src/main.cc
 
 # Move the binary to a directory in your PATH
-mv mklib /usr/local/bin/
+sudo mv mklib /usr/local/bin/
 ```
 
 ## Usage
