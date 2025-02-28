@@ -35,7 +35,12 @@ magma
 # g++ -std=c++17 -o bin/mklib src/main.cc
 
 # Move the binary to a directory in your PATH
-sudo mv mklib /usr/local/bin/
+mv bin/mklib /usr/local/bin/
+```
+
+If you got permission error try executing this
+```
+sudo mv bin/mklib /usr/local/bin/
 ```
 
 ## Usage
