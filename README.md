@@ -202,7 +202,7 @@ Both styles can be used interchangeably within the same `build.mklib` file.
 For updates and contributions, follow the project on [GitHub](https://github.com/darkyboys/mklib).
 
 ## Contributing
-This project is open for contribution please refer [Guidelines](https://github.com/darkyboys/mklib/CONTRIBUTING.md)
+This project is open for contribution please refer [Guidelines](CONTRIBUTING.md)
 <!-- ### Documentation
 For detailed usage and advanced configurations, check the full documentation at [GitHub Wiki](https://github.com/darkyboys/mklib/wiki).
  -->
