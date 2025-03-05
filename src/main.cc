@@ -26,8 +26,8 @@
 
 
 int main (int argc, char * argv[]){
-    if (argc == 2 and (std::string(argv[1]) == "--version" or std::string (argv[1]) == "-v")) std::cout <<"MKLIB 1.0 (Community Edition)\n\n", std::exit ( 3 );
-    if (argc == 2 and (std::string(argv[1]) == "--help" or std::string (argv[1]) == "-h")) std::cout <<"MKLIB 1.0 (Community Edition) - Help\n\n"
+    if (argc == 2 and (std::string(argv[1]) == "--version" or std::string (argv[1]) == "-v")) std::cout <<"MKLIB 2.0 (Community Edition)\n\n", std::exit ( 3 );
+    if (argc == 2 and (std::string(argv[1]) == "--help" or std::string (argv[1]) == "-h")) std::cout <<"MKLIB 2.0 (Community Edition) - Help\n\n"
                                                                                                      <<"Standard Usage-> mklib in the directory with build.mklib file or mklib path/to/build.mklib/file or mklib --version , -v for version and mklib --help, -h for help\n", std::exit ( 3 );
     // std::cout <<"Exec...\n";
     // std::string temp = "", code = "";
