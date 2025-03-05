@@ -21,6 +21,26 @@ void function (std::string name, std::string arg){
         if (show_logs) std::cout << "Function -> Setting the source_path to "<<arg<<"\n";
         SRC_PATH=arg;
     }
+    else if (name == "src"){
+        if (show_logs) std::cout << "Function -> Setting the source_path to "<<arg<<"\n";
+        SRC_PATH=arg;
+    }
+    else if (name == "import"){
+        if (show_logs) std::cout << "Function -> Setting the import to "<<arg<<"\n";
+        INCLUDE+="LIBXINC "+arg+"\n";
+    }
+    else if (name == "append"){
+        if (show_logs) std::cout << "Function -> Setting the append to "<<arg<<"\n";
+        INCLUDE+="STRXAPD " + arg + "\n";
+    }
+    else if (name == "clear_config"){
+        if (show_logs) std::cout << "Function -> Clearing the config "<<arg<<"\n";
+        INCLUDE="";
+        EXTENSION="";
+        OUTPUT="";
+        OUT_DIR="";
+        SRC_PATH="";
+    }
     else if (name == "extension"){
         if (show_logs) std::cout << "Function -> Setting the extension to "<<arg<<"\n";
         EXTENSION=arg;

@@ -1,4 +1,4 @@
-# mklib
+# mklib-2.0
 
 *mklib* is a lightweight and efficient library packaging tool that compiles multiple source files into a single output file based on a `build.mklib` configuration file. It is designed to improve modular library usage by eliminating the need for multiple imports or includes, making projects easier to manage.
 
@@ -133,6 +133,25 @@ Example:
 make ();
 ```
 This will generate the final output file as per the specified settings.
+
+#### `append ();`
+This will append the arguments given to it in the exact position inside the builded file.
+
+Example:
+```mklib
+append ("Hello world string of javascript" + 1); //  what ever you want you can parse!
+```
+
+This is the only function which arguments ignores comments with '#' and '//' commenting styles inside the arguments.
+
+#### `import ();`
+This will include the file from the exact path you defined to the build file.
+
+Example:
+```mklib
+import (src/file/myfile.cc); // you manually defines path here
+```
+This will include the `src/file/myfile.cc` in the build file.
 
 ## Commenting Styles
 

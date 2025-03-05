@@ -45,6 +45,10 @@ void executer (){
             }
         }
 
+        else if (temp_name == "STRXAPD") {
+            libxinc += temp_arguments + "\n";
+        }
+
         else if (temp_name == "SIGN-SIGNAL") {
             if (show_logs) std::cout << "Signing the signal "<<signal<<"\n...";
             std::ofstream sign_signal_out_file (OUT_DIR+"/"+signal);

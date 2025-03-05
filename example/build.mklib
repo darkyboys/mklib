@@ -1,4 +1,4 @@
-// show_logs (true);
+show_logs (true);
 
 output_directory (lib);
 output (example);
@@ -7,6 +7,8 @@ source_path (example);
 include (main);
 include (math);
 include (string);
+append (# python is here);
+import (example/j.py);
 
 make ();
 

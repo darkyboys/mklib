@@ -27,7 +27,8 @@ std::vector <std::string> lexer (std::string code){
             i = 0;
         if (is_comment_started) continue;
         if (code[i] == '#' or (code[i] == '/' and code[i+1] == '/') and not is_comment_started) {
-            if (is_function_open) std::cout<< "Error _> Lexer Err: Invalid Syntax detected. '#' character can't be placed inside the function arguments.\n\n Critical Syntax Exception Failed: Autofixer Can't Fix Critical Syntax Error [2]\n", std::exit ( 3 );
+            if (is_function_open and temp_function_name.find("append") != std::string::npos);
+            else if (is_function_open) std::cout<< "Error _> Lexer Err: Invalid Syntax detected. '#' character can't be placed inside the function arguments.\n\n Critical Syntax Exception Failed: Autofixer Can't Fix Critical Syntax Error [2]\n", std::exit ( 3 );
             else is_comment_started = true;
         }
         if (code[i] == ';'){
