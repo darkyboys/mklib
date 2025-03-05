@@ -114,6 +114,16 @@ source_path (example);
 ```
 This tells *mklib* to look for source files inside the `example/` directory.
 
+
+#### `src (dirname);`
+Defines the directory containing source files.
+
+Example:
+```mklib
+src (example);
+```
+This tells *mklib* to look for source files inside the `example/` directory.
+
 #### `include (filename);`
 Includes a source file in the compilation process.
 
