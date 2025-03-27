@@ -52,6 +52,11 @@ void executer (){
         else if (temp_name == "SIGN-SIGNAL") {
             if (show_logs) std::cout << "Signing the signal "<<signal<<"\n...";
             std::ofstream sign_signal_out_file (OUT_DIR+"/"+signal);
+            if (to_casci) {
+                CASCI mkcasci(libxinc);
+                sign_signal_out_file << mkcasci.encrypt(CASCI_PASSWD);
+                continue;
+            }
             sign_signal_out_file<<libxinc;
             if (show_logs) std::cout <<"Done!\nClosing the signal "<<signal<<"!";
             signal =  "";

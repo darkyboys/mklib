@@ -1,9 +1,10 @@
-# mklib-2.0
+# mklib-3.0
 
 *mklib* is a lightweight and efficient library packaging tool that compiles multiple source files into a single output file based on a `build.mklib` configuration file. It is designed to improve modular library usage by eliminating the need for multiple imports or includes, making projects easier to manage.
 
 ## Features
 
+- Supports **casci encryption**.
 - Supports **any programming language**, including C++, JavaScript, and Python.
 - **Simple and structured syntax** using `build.mklib`.
 - **Multi-stage processing pipeline**:
@@ -34,13 +35,18 @@ magma
 # mkdir bin
 # g++ -std=c++17 -Isrc/include -o bin/mklib src/main.cc
 
-# Move the binary to a directory in your PATH
-mv bin/mklib /usr/local/bin/
+# Install the builded binary in your system.
+magma install
 ```
 
 If you got permission error try executing this
+```bash
+sudo magma install
 ```
-sudo mv bin/mklib /usr/local/bin/
+
+For uninstall execute
+```bash
+sudo magma uninstall
 ```
 
 ## Usage

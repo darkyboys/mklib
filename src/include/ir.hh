@@ -14,6 +14,8 @@ bool show_logs = false;
 bool is_IR_Made = false;
 
 // IR
+bool to_casci = false;
+std::string CASCI_PASSWD = "1";
 std::string INCLUDE=""; // temp only
 std::string EXTENSION=""; // temp only
 std::string OUTPUT="libxmklib"; // temp only

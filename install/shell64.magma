@@ -1,0 +1,3 @@
+# This is the mklib install file!
+# This can be only run with the magma build system.
+mv bin/mklib /usr/local/bin
