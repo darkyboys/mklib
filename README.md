@@ -193,6 +193,9 @@ extension (js);
 
 Both styles can be used interchangeably within the same `build.mklib` file.
 
+### Build as CASCI
+Use `--format=casci <yout pattern>` to create output files but in CASCI format with specified pattern.
+
 ## Roadmap
 
 - Add more optimizations for different languages.
